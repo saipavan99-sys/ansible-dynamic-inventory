@@ -11,8 +11,8 @@
 
   - name: installing nginx 
     dnf:
-    name: nginx
-    state: present
+     name: nginx
+     state: present
 
   - name: start nginx
     service:
