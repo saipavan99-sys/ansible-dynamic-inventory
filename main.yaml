@@ -3,3 +3,7 @@
   tasks:
   - name: ping the server
     ping:
+
+- name: print hi
+  debug:
+    msg: "HI"
