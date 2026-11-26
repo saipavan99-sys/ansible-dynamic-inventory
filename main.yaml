@@ -1,5 +1,6 @@
 - name: ping the server
   hosts: _roboshop_frontend
+  become: yes
   tasks:
   - name: ping the server
     ping:
@@ -7,3 +8,13 @@
   - name: print hi
     debug:
       msg: "HI"
+
+  - name: installing nginx 
+    dnf:
+    name: nginx
+    state: present
+
+  - name: start nginx
+    service:
+     name: nginx
+     state: started     
