@@ -6,7 +6,7 @@ filters:
   instance-state-name: running
   tag:Name: frontend
 
-hostsnames:
+hostnames:
 - private-ip-address
 
 keyed_groups:
